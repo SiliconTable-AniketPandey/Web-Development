@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Part 1</title>
+
+    <style>
+
+    /* This is normal css implementation*/
+        body{
+            background-color: black;
+        }
+
+        h1{
+            background-color: aqua;
+            color: red;
+            font-size: xx-large;
+        }
+        h2{
+            background-color: brown;
+        }
+
+    /*Class Selector*/
+        .Green{
+            color: green;
+        }
+        
+        .Yellow{
+            color : Yellow;
+        }
+
+        .White{
+            color: White;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    /* id selector*/
+        #Click-me{
+            border-radius: 50px;
+            /* color: red; */
+            
+        }
+        button:hover{
+            color: Red;
+        }
+
+        #White{
+            color: White;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        #Brown{
+            color: Brown;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    /* psdo class selector*/
+        a:hover{
+            color: green;
+            font-size: xx-large;
+        }
+
+        .Google-link:hover{
+            color : red;
+            font-family:fantasy;
+        }
+
+        .Psedo-classes{
+            color: white;
+            font-size: larger;
+        }
+
+        #Psedo-classes:hover{
+            font-size: x-large;
+            color: rebeccapurple
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <h1>This is CSS class 1</h1>
+    <h1>This is second para</h1>
+    <h2>This is third para</h2>
+
+
+    <!-- This is class implementation -->
+    <p class="Green">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, illum.
+    </p>
+
+    <p class = "Yellow">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. A asperiores quis quo, numquam facilis autem cum. Dolor placeat odio sint optio ex culpa delectus debitis! Labore praesentium minus laboriosam facere, quas voluptatum voluptate tempore, vero recusandae architecto vel nobis ipsam perspiciatis quidem dicta quam nisi cupiditate placeat? Hic, facere odio.
+    </p>
+
+    <pre class = "White">
+        Hellow World
+        I am doing CSS
+    </pre>
+
+    <p class = "White">
+        This paragraph has same properties as the above, becase both of them have the same class
+    </p>
+
+
+    <!-- This is id implementation -->
+
+    <button id = "Click-me">Click me</button>
+
+    <p id = "White"> This para has white id</p>
+
+    <pre id = "Brown"> 
+        The id attribte can be added to an element along with a class attribte.
+        On the css side the delineation is amde by sing # to represent an id 
+        the same way . is sed to represent a class
+    </pre>
+
+    <!-- This is Psedo class implementation -->
+
+    <a href="https://www.Google.com" class="Google-link">Google.com</a>
+    <br>
+
+    <pre class = "Psedo-classes" id="Psedo-classes">
+        A CSS Psedo-class is a keyword added to a selector that specifies a special 
+        state of the selected element(s). 
+        For example, :hover can be sed to change a btton's color when the ser's pointer hovers over it
+    </pre>
+
+    <!-- Mltiple Selector -->
+    <pre class = "Psedo-classes">
+        We have already seen this when we were applying CSS in tables
+
+
+            table, td, th {  <--- Mltiple tags are inclded in here this is called mltiple selector
+                
+                
+                border: 1px solid black;
+                border-collapse: collapse;
+                caption-side: bottom;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+            
+        
+    </pre>
+
+</body>
+</html>
