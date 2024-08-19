@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        table, tr, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            caption-side:bottom;
+        }
+
+        #Advanced_table, th ,td {
+            caption-side: top;
+            border-collapse:collapse;
+            text-align: left;
+            border: 1px solid black;
+
+        } 
+
+
+    </style>
+
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <th>
+                Month
+            </th>
+            <th>
+                Expences
+            </th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>anary</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Febrry</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>400</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <Td>1000</Td>
+        </tfoot>
+    </table>
+
+    <br>
+    <br>
+    <table>
+        <caption><b>No. of nits odered</b></caption>
+        <thead style="background-color:yellow;">
+            <tr>
+                <th rowspan="2" style="text-align: center;">Days</th>
+                <th colspan="5" style="text-align: center;">Frit Names</th>
+            </tr>
+            <tr>
+                <!-- <td style="background-color: yellow;"></td> -->
+                <td style="background-color: lightgreen;">Mango</td>
+                <td style="background-color: lightgreen;">Apple</td>
+                <td style="background-color: lightgreen;">Banana</td>
+                <td style="background-color: lightgreen;">Cocont</td>
+                <td style="background-color: lightgreen;">Stawberry</td>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>Monday</td>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Tesday</td>
+                <td>150</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>                
+                <td>130</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>170</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+                <td>500</td>
+            </tr>
+            <tr>                
+                <td>Satrday</td>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Snday</td>
+                <td>112</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+                <td>500</td>
+            </tr>
+            <tfoot>
+                <td>Total</td>
+                <td>772</td>
+                <td>1200</td>
+                <td>1800</td>
+                <td>2400</td>
+                <td>3500</td>
+            </tfoot>
+        </tbody>
+    </table>
+    <br>
+    <img src="image.jpg" alt="Image of qestion">
+    <br>
+    <table id = "Advanced_table">
+        <caption>Frits and Vegetables</caption>
+        <thead>
+            <tr>
+                <th style="min-width: 120px; text-align: center;" colspan="2">Veggis</th>
+                
+                <th style="min-width: 180px; text-align: center;" colspan="2">Frits</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Yellow Perrer</td>
+                <td rowspan="2">Banana</td>
+                <td rowspan="2">Orange</td>
+                <th rowspan="3" style="text-align: center;">Yellow</th>
+            </tr>
+            <tr>
+                <td colspan="2">Yellow Zcchini</td>
+            </tr>
+            <tr>
+                <td>Pmpkin</td>
+                <td>Corn</td>
+                <td colspan="2">Pineapple</td>
+            </tr>
+            <tr>
+                <td colspan="2">Red Pepper</td>
+                <td rowspan="2">Stawberry</td>
+                <td rowspan="2">Watermelon</td>
+                <th rowspan="3" style="text-align: center;">Red</th>
+            </tr>
+            <tr>
+                <td>Beet</td>
+                <td>Tomato</td>
+            </tr>
+            <tr>
+                <td colspan="2">Radishes</td>
+                <td colspan="2">Cherries</td>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table>
+<br>
+<br>
+
+
+</body>
+</html>
