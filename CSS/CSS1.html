@@ -77,6 +77,22 @@
             font-size: x-large;
             color: rebeccapurple
         }
+
+
+    /* Nested selector implementation */
+        .Example{
+            color: White;
+            & > a{
+                color: tomato;
+                &:hover, &:focus{
+                    font-size: medium;
+                    color:white;
+                    background-color: tomato;
+                }
+
+            }
+        }
+
     </style>
 
 </head>
@@ -145,9 +161,10 @@
                 margin-right: auto;
 
             }
-            
-        
     </pre>
+    <!-- Nested selector implementation -->
+
+    <p class = "Example">This is a line and it has a <a href="https://www.Google.com">Google ink</a>try hovering it</p>
 
 </body>
 </html>
