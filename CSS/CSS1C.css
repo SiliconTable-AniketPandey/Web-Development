@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+    background-color: rgb(32, 29, 29);
+    justify-content: center;
+}
+
+.card{
+    background-color: #fff;
+    height:280px;
+    width: 290px;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+}
+
+.card-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.content-hedder{
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    line-height: 2px;
+    margin-bottom: 1px;
+}
+.content-description{
+    font-family: "Varela Round", sans-serif;
+    font-size: 15px;
+}
+
+.pricing{
+    justify-content: space-around;
+    align-items: center;
+}
+.crrent-price{
+    font-size: 17px;
+    color: rgb(165, 9, 9);
+    padding: 3px;
+}
+
+.original-price{
+    font-size: 17px;
+    color: grey;
+    padding: 3px;
+}
+
+.discont{
+    color: white;
+    background-color: #00ffa6;
+    padding: 1.5px 3px;
+    border-radius: 1px;
+    display: inline-block;
+}
