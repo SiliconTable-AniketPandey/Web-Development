@@ -54,7 +54,7 @@ body{
 .discont{
     color: white;
     background-color: #00ffa6;
-    padding: 1.5px 3px;
-    border-radius: 1px;
+    padding: 2px 3px;
+    border-radius: 3px;
     display: inline-block;
 }
