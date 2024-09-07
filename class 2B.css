@@ -1,0 +1,14 @@
+
+.box1{
+    margin: 30px;
+    height: 300px;
+    width: 300px;
+    background-image: linear-gradient(135deg, red, blue);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 
+        -10px -10px 20px rgba(102, 255, 20, 0.7),
+        20px 20px 30px rgba(255, 9, 9, 0.5)
+        
+}

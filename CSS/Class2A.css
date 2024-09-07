@@ -1,0 +1,23 @@
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.box1{
+    background-image: radial-gradient(circle, red,yellow,green);
+    height: 200px;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.box2{
+    background-image: radial-gradient(red 10%,yellow 30%,green 60%);
+    height: 200px;
+    width: 200px;
+}
