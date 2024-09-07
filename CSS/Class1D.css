@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.font1 pre {
+    font-size: large;
+    font-family:"Varela Round",sans-serif;
+}
+
+.font2 pre {
+    font-size: 2rem;
+    font-family:"Varela Round",sans-serif;
+}
