@@ -1,0 +1,14 @@
+div{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#box2{
+    display: inline-block;
+    left: 120px;
+    top: 0px;
+    position: sticky;
+    background-color: red;
+}
