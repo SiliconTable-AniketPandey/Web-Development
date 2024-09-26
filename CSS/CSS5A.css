@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 1px solid black;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box{
+    border: 2px solid red;
+    background-color: aqua;
+    flex-basis: 100px;
+
+}
+
+#box1{
+    align-self: flex-end;
+}
+
+#box2{
+    align-self: flex-start;
+}
+
+#box3{
+    align-self: stretch
+}
