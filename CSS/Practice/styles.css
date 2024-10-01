@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    height: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    padding: 0; 
+    width: 100%; 
+}
+
+.logo{
+    width: 35%;
+}
+
+.NavButtons {
+    display: flex; 
+    margin: 0; 
+    width: 55.9%;
+}
+
+.NavButtons ul {
+    display: flex; 
+    margin: 0; 
+}
+
+.NavButtons li {
+    margin: 0 20px; /* Space between items */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.NavButtons li:hover{
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 50px;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 10px #333);
+}
+
+#hireme {
+    background: linear-gradient(90deg, #FCB0F3 0%, #3D05DD 100%);
+    display: inline-block;
+    padding: 16px 20px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: auto; /* Push "HIRE ME" to the right */
+    filter: drop-shadow(0 0 10px #333);
+}
+
+#hireme p {
+    margin: 0;
+    font-weight: bold; /* Make text bold */
+}
+
+header {
+    width: 35%; 
+}
+
+header .first-header {
+    color: red;
+    font-size: 2.7rem;
+}
+
+header .second-header {
+    font-size: 2.7rem;
+}
+
+header pre {
+    font-size: 14px;
+}
+
+header .learnmore {
+    margin-top: 12px;
+    background: #000;
+    display: inline-block;
+    padding: 16px 21px;
+    border-radius: 50px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #333);
+}
+
+header .learnmore p {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
