@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: brown;
+    height: auto;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns:250px 1fr 150px;
+    grid-template-rows: 45px 520px 45px;
+    gap: 4px;
+}
+.box{
+    background-color: aqua;
+    border: 2px solid black;
+    
+    
+}
+
+#box1, #box5{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#box2 , #box3, #box4{
+    grid-row-start:2 ;
+    grid-row-end:4;
+}
