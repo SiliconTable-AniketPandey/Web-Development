@@ -1,0 +1,37 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+}
+
+.box{
+    border: 2px solid orange;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    transition: background-color 1s ease 3s;
+    animation-name: hello;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+.box:hover{
+    background-color: lime;
+    transition: 1.5s;
+    transition-delay: 4s;
+    background-color: red;
+}
+
+@keyframes hello{
+    from{
+        width: 150px;
+    }
+    to{
+        width: 300px;
+    }
+}

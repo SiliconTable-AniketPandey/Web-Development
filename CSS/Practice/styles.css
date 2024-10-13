@@ -52,8 +52,8 @@ body {
 }
 
 .NavButtons li {
-    margin: 0 20px; /* Space between items */
-    cursor: pointer; /* Change cursor to pointer */
+    margin: 0 20px; 
+    cursor: pointer; 
 }
 
 .NavButtons li:hover{
