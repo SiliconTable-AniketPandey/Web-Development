@@ -30,8 +30,10 @@
 @keyframes hello{
     from{
         width: 150px;
+        background-color: orange;
     }
     to{
         width: 300px;
+        background-color: white;
     }
 }
