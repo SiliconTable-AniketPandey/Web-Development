@@ -540,9 +540,9 @@ a {
 @media (max-width: 1300px) {
     .page-header {
         padding-top: 30px;
-        color: var(--bgOrange);
+        color: var(--bgPurple);
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .project-container {
@@ -560,7 +560,7 @@ a {
 
     .project-content {
         transform: scale(0.5);
-        /* Corrected scale property */
+        
         bottom: 0;
         left: 0;
         right: 0;
@@ -603,9 +603,10 @@ a {
 }
 
 @media (max-width: 480px) {
+    
     .page-header {
         padding-top: 20px;
-        color: var(--bgOrange);
+        color: var(--bgPurple);
         text-align: center;
         font-size: 30px;
     }
