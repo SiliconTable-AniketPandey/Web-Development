@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logos {
+    display: flex; 
+    overflow: hidden; 
+    width: 100%; 
+    position: relative;
+}
+
+.logos::before{
+    left: 0;
+    background: linear-gradient(to left,rgba(255,255,255,0),white);
+}
+
+
+.logos::after{
+    right: 0;
+    background: linear-gradient(to right,rgba(255,255,255,0),white);
+}
+
+.logos::before, .logos::after{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logosslider {
+    display: flex; 
+    animation: brand_logo_slider 60s linear infinite; /* Animation for scrolling */
+    flex-shrink: 0; 
+}
+
+@keyframes brand_logo_slider {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+.logosslider{
+    filter: grayscale(1);
+}
+
+.logosslider:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+
+
+

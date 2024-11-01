@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind first class</title>
+
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.cdnfonts.com/css/tasa-orbiter-display" rel="stylesheet">
+
+
+    </head>
+
+    <body class="box-border overflow-x-hidden overflow-y-auto m-0 p-0">
+        <div class="flex justify-center items-center flex-col w-full max-w-[1440px] mx-auto px-4 lg:px-10 relative">
+            <nav class="navbar bg-gradient-to-t from-white via-nav_gradient to-white z-20 w-full">
+                <div class="w-full max-w-[1184px] mx-auto flex items-center justify-between">
+
+                    <div class="py-6 pr-7 flex">
+                        <!-- logo -->
+                        <a href="index.html" class="cursor-pointer ">
+                            <img src="./images/razorpay-icon.svg" width="140px" height="30px" />
+                        </a>
+
+                        <ul class="flex space-x-6">
+
+                            <!-- Payments -->
+                            <li
+                                class="pl-5 py-2 text-base justify-center items-center -top-1 flex text-grey_text_300  group font-inter font-semibold hover:text-nav_glow_blue  transition-all duration-200 relative">
+                                Payments
+                                <div
+                                    class="translate-y-5 w-full h-1 hidden group-hover:block bg-nav_button_blue absolute bottom-3">
+                                </div>
+
+                                <div
+                                    class="absolute top-[117%] bg-white overflow-auto -left-28 pt-6 pr-0 pb-0 pl-0 mx-auto w-[1041.4px] h-[560.4px] shadow-xl rounded-lg hidden opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200 z-10 ">
+                                    <div class="flex ">
+
+                                        <!-- First column -->
+                                        <div class="flex-col justify-between">
+                                            <p
+                                                class="px-11 py-4 group font-Inter font-medium group-hover:text-grey_text_200 text-xs ">
+                                                ACCEPT PAYMENTS ONLINE
+                                            <div class="flex">
+
+
+                                                <ul class="p-4">
+                                                    <li
+                                                        class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img class="object-contain w-full h-full"
+                                                                    src="./images/Icons/Paymentagg.svg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Aggregator</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Accepting payments made easy for businesses
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/meeting_room_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Gateway</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Payments on your Website & App
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/link_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Links</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Create & send links to collect money
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/description_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Pages</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Get paid with personalized page
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/gamepad_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Buttons</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Create, Copy and Collect in 5 mins
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/qr_code_scanner_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">QR Codes</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Multi feature QR for your businesses
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Second Column -->
+                                        <div class="flex-col justify-between pt-5">
+                                            <p
+                                                class="px-11 py-4 group font-Inter font-medium group-hover:text-grey_text_200 text-xs left-96">
+
+                                            <ul class="p-4">
+                                                <li
+                                                    class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/bolt_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Aggregator</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Accepting payments made easy for businesses
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/book_4_spark_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text flex">Magic Checkout <div
+                                                                class="px-2 ">
+                                                                <p
+                                                                    class="text-new_text bg-bg_new_text rounded-md p-[4px] text-xs">
+                                                                    NEW</p>
+                                                            </div></span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Payments on your Website & App
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/network_intelligence_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Links</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create & send links to collect money
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/subscriptions_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Pages</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Get paid with personalized page
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/language_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Buttons</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create, Copy and Collect in 5 mins
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            </p>
+                                        </div>
+
+                                        <!-- Third column -->
+                                        <div class="flex-col justify-between">
+                                            <p
+                                                class="px-11 py-4 group font-Inter font-medium group-hover:text-grey_text_200 text-xs left-96">
+                                                ACCEPT PAYMENTS OFFLINE
+
+                                            <ul class="p-4">
+                                                <li
+                                                    class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/point_of_sale_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Aggregator</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Accepting payments made easy for businesses
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <p class="py-4 px-6 text-xs text-grey_text_200">PARTNER APPS</p>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/whatsapp-white-icon.svg"
+                                                                class="w-5 h-5 " alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Gateway</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Payments on your Website & App
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/account_tree_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Links</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create & send links to collect money
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <p class="py-4 px-6 text-xs text-grey_text_200">WITH POWER ADD ONS</p>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/shop_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Links</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create & send links to collect money
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <!-- Banking -->
+
+                            <li
+                                class="py-2 text-base justify-center items-center -top-1 flex text-grey_text_300  group font-inter font-semibold hover:text-nav_glow_blue  transition-all duration-200 relative">
+                                Banking+
+                                <div
+                                    class="translate-y-5 w-full h-1 hidden group-hover:block bg-nav_button_blue bottom-3 absolute">
+                                </div>
+
+                                <div
+                                    class="absolute top-[117%]  bg-white overflow-auto -left-56 pt-6 pr-0 pb-0 pl-0 mx-auto w-[1041.4px] h-[560.4px] shadow-xl rounded-lg hidden opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200 z-10 ">
+                                    <div class="flex ">
+
+                                        <!-- First column -->
+                                        <div class="flex-col justify-between">
+                                            <p
+                                                class="px-11 py-4 group font-Inter font-medium group-hover:text-grey_text_200 text-xs ">
+                                                BUSNESS BANKING PLUS
+                                            <div class="flex">
+
+
+                                                <ul class="p-4">
+                                                    <li
+                                                        class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/Paymentagg.svg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Aggregator</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Accepting payments made easy for businesses
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/meeting_room_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text flex">Payment Gateway <div
+                                                                    class="px-2 ">
+                                                                    <p
+                                                                        class="text-new_text bg-bg_new_text rounded-md p-[4px] text-xs">
+                                                                        NEW</p>
+                                                                </div></span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Payments on your Website & App
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/link_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Links</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Create & send links to collect money
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/description_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Pages</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Get paid with personalized page
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/gamepad_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Buttons</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Create, Copy and Collect in 5 mins
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+
+
+                                                </ul>
+
+                                            </div>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Second Column -->
+                                        <div class="flex-col justify-between pt-5">
+                                            <p
+                                                class="px-11 py-4 group font-Inter font-medium group-hover:text-grey_text_200 text-xs left-96">
+
+                                            <ul class="p-4">
+                                                <li
+                                                    class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/bolt_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Aggregator</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Accepting payments made easy for businesses
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/book_4_spark_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text flex">Magic Checkout <div
+                                                                class="px-2 ">
+                                                                <p
+                                                                    class="text-new_text bg-bg_new_text rounded-md p-[4px] text-xs">
+                                                                    NEW</p>
+                                                            </div></span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Payments on your Website & App
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/network_intelligence_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text flex">Payment Links <div
+                                                                class="px-2 ">
+                                                                <p
+                                                                    class="text-new_text bg-bg_new_text rounded-md p-[4px] text-xs">
+                                                                    NEW</p>
+                                                            </div></span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create & send links to collect money
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/subscriptions_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text flex">Payment Pages <div
+                                                                class="px-2 ">
+                                                                <p
+                                                                    class="text-new_text bg-bg_new_text rounded-md p-[4px] text-xs">
+                                                                    NEW</p>
+                                                            </div></span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Get paid with personalized page
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/language_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Buttons</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create, Copy and Collect in 5 mins
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            </p>
+                                        </div>
+
+                                        <!-- Third column -->
+                                        <div class="flex-col justify-between">
+                                            <p
+                                                class="px-11 py-4 group font-Inter font-medium group-hover:text-grey_text_200 text-xs left-96">
+                                                ACCEPT PAYMENTS OFFLINE
+
+                                            <ul class="p-4">
+                                                <li
+                                                    class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/point_of_sale_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Aggregator</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Accepting payments made easy for businesses
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <p class="py-4 px-6 text-xs text-grey_text_200">CREDIT</p>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/whatsapp-white-icon.svg"
+                                                                class="w-5 h-5 " alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Gateway</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Payments on your Website & App
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/account_tree_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Links</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create & send links to collect money
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <p class="py-4 px-6 text-xs text-grey_text_200">START YOUR BUSINESS</p>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/shop_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Links</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create & send links to collect money
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+
+                            <!-- Payroll -->
+                            <li
+                                class="py-2 text-base justify-center items-center -top-1 flex text-grey_text_300  group font-inter font-semibold hover:text-nav_glow_blue  transition-all duration-200 relative">
+                                Payroll
+                                <div
+                                    class="translate-y-5 w-full h-1 hidden group-hover:block bg-nav_button_blue absolute bottom-3">
+                                </div>
+
+                                <div
+                                    class="absolute top-[117%] bg-white mx-auto w-[17.375rem] h-[10.4rem] shadow-xl rounded-lg hidden opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200 z-10">
+
+                                    <div class="flex ">
+
+                                        <!-- First column -->
+                                        <div class="flex-col justify-between">
+                                            <p
+                                                class="px-10 pt-6 group font-Inter font-medium group-hover:text-grey_text_200 text-xs ">
+                                                PAYROLL
+                                            <div class="flex">
+
+
+                                                <ul class="p-4">
+                                                    <li class="py-4 px-6">
+
+                                                        <div>
+                                                            <span class="text-grey_text_200 text-base flex"> <a href="#">For
+                                                                    Stratup & SMEs</a></span>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="py-4 px-6 ">
+
+                                                        <div>
+                                                            <span class="text-grey_text_200 flex">For Enterprises<div
+                                                                    class="px-2 ">
+                                                                    <p
+                                                                        class="text-new_text bg-bg_new_text rounded-md p-[4px] text-xs">
+                                                                        NEW</p>
+                                                                </div></span>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                            <!-- Partners -->
+                            <li
+                                class="py-2 text-base justify-center items-center -top-1 flex text-grey_text_300  group font-inter font-semibold hover:text-nav_glow_blue  transition-all duration-200 relative">
+                                Partners
+                                <div
+                                    class="translate-y-5 w-full h-1 hidden group-hover:block bg-nav_button_blue absolute bottom-3">
+                                </div>
+
+                                <div
+                                    class="absolute top-[117%] bg-white mx-auto w-[17.375rem] h-[10.4rem] shadow-xl rounded-lg hidden opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200 z-10">
+                                    <div class="flex ">
+
+                                        <!-- First column -->
+                                        <div class="flex-col justify-between">
+                                            <p
+                                                class="px-10 pt-6 group font-Inter font-medium group-hover:text-grey_text_200 text-xs ">
+                                                BUSNESS BANKING PLUS
+                                            <div class="flex">
+
+
+                                                <ul class="p-4">
+                                                    <li
+                                                        class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+
+                                                        <div>
+                                                            <span class="text-grey_text_200  text-base ">Payment
+                                                                Aggregator</span>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+
+                                                        <div>
+                                                            <span class="text-grey_text_200 flex text-base">Payment Gateway
+                                                                <div class="px-2 ">
+                                                                    <p
+                                                                        class="text-new_text bg-bg_new_text rounded-md p-[4px] text-xs">
+                                                                        NEW</p>
+                                                                </div></span>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                            <!-- Resources -->
+                            <li
+                                class="py-2 text-base justify-center items-center -top-1 flex text-grey_text_300  group font-inter font-semibold hover:text-nav_glow_blue  transition-all duration-200 relative">
+                                Resources
+                                <div
+                                    class="translate-y-5 w-full h-1 hidden group-hover:block bg-nav_button_blue absolute bottom-3 ">
+                                </div>
+
+                                <div
+                                    class="absolute top-[117%] bg-white overflow-auto pt-6 pr-0 pb-0 pl-0 mx-auto w-[1041.4px] h-[560.4px] shadow-xl rounded-lg hidden opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200 z-10 ">
+                                    <div class="flex ">
+
+                                        <!-- First column -->
+                                        <div class="flex-col justify-between">
+                                            <p
+                                                class="px-11 py-4 group font-Inter font-medium group-hover:text-grey_text_200 text-xs ">
+                                                ACCEPT PAYMENTS ONLINE
+                                            <div class="flex">
+
+
+                                                <ul class="p-4">
+                                                    <li
+                                                        class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/Paymentagg.svg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Aggregator</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Accepting payments made easy for businesses
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/meeting_room_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Gateway</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Payments on your Website & App
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/link_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Links</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Create & send links to collect money
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/description_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Pages</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Get paid with personalized page
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/gamepad_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">Payment Buttons</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Create, Copy and Collect in 5 mins
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li
+                                                        class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                        <div
+                                                            class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                            <a href="#">
+                                                                <img src="./images/Icons/qr_code_scanner_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div>
+                                                            <span class="text-black_bold_text">QR Codes</span>
+                                                            <p class="text-xs text-sub_text">
+                                                                Multi feature QR for your businesses
+                                                            </p>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Second Column -->
+                                        <div class="flex-col justify-between pt-5">
+                                            <p
+                                                class="px-11 py-4 group font-Inter font-medium group-hover:text-grey_text_200 text-xs left-96">
+
+                                            <ul class="p-4">
+                                                <li
+                                                    class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/bolt_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Aggregator</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Accepting payments made easy for businesses
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/book_4_spark_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text flex">Magic Checkout <div
+                                                                class="px-2 ">
+                                                                <p
+                                                                    class="text-new_text bg-bg_new_text rounded-md p-[4px] text-xs">
+                                                                    NEW</p>
+                                                            </div></span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Payments on your Website & App
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/network_intelligence_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Links</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create & send links to collect money
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/subscriptions_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Pages</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Get paid with personalized page
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/language_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Buttons</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create, Copy and Collect in 5 mins
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            </p>
+                                        </div>
+
+                                        <!-- Third column -->
+                                        <div class="flex-col justify-between">
+                                            <p
+                                                class="px-11 py-4 group font-Inter font-medium group-hover:text-grey_text_200 text-xs left-96">
+                                                ACCEPT PAYMENTS OFFLINE
+
+                                            <ul class="p-4">
+                                                <li
+                                                    class="py-4 px-6 group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/point_of_sale_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Aggregator</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Accepting payments made easy for businesses
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <p class="py-4 px-6 text-xs text-grey_text_200">PARTNER APPS</p>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/whatsapp-white-icon.svg"
+                                                                class="w-5 h-5 " alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Gateway</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Payments on your Website & App
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/account_tree_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Links</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create & send links to collect money
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                                <p class="py-4 px-6 text-xs text-grey_text_200">WITH POWER ADD ONS</p>
+
+                                                <li
+                                                    class="py-4 px-6  group-hover:text-grey_text_200 flex items-center space-x-2">
+                                                    <div
+                                                        class="bg-nav_button_blue w-8 h-8 rounded-full z-0 flex items-center justify-center">
+                                                        <a href="#">
+                                                            <img src="./images/Icons/shop_29dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-black_bold_text">Payment Links</span>
+                                                        <p class="text-xs text-sub_text">
+                                                            Create & send links to collect money
+                                                        </p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Support -->
+                            <li
+                                class="py-2 text-base justify-center items-center -top-1 flex text-grey_text_300  group font-inter font-semibold hover:text-nav_glow_blue  transition-all duration-200 relative">
+                                Support
+                                <div
+                                    class="translate-y-5 w-full h-1 hidden group-hover:block bg-nav_button_blue absolute bottom-3">
+                                </div>
+
+                                <div
+                                    class="absolute top-[117%] bg-white overflow-auto -left-28 pt-6 pr-0 pb-0 pl-0 mx-auto w-[18.5rem] h-[24.375rem] shadow-xl rounded-lg hidden opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200 z-10">
+                                    <p class="p-6 group font-Inter font-medium text-xs group-hover:text-grey_text_200">
+                                        ACCEPT PAYMENTS ONLINE</p>
+                                    <ul class="pt-1 pb-1 pl-6">
+                                        <li class="py-2 group-hover:text-grey_text_200 text-base">Raise a Ticket for
+                                            Payments</li>
+                                        <li class="py-2 group-hover:text-grey_text_200 text-base">Raise a Ticket for Banking
+                                        </li>
+                                        <li class="py-2 group-hover:text-grey_text_200 text-base">Raise a Ticket for Payroll
+                                        </li>
+                                        <li class="py-2 group-hover:text-grey_text_200 text-base">Raise a Ticket for POS
+                                        </li>
+                                        <li class="py-2 group-hover:text-grey_text_200 text-base">Knowledgebase</li>
+                                        <li class="py-2 group-hover:text-grey_text_200 text-base">Checkback Guides</li>
+                                        <li class="py-2 group-hover:text-grey_text_200 text-base">Settlements Guide</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Pricing -->
+                            <li
+                                class="py-2 text-base -top-1 flex text-grey_text_300  group font-inter font-semibold hover:text-nav_glow_blue  transition-all duration-200 relative">
+                                Pricing
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div>
+                        <ul>
+                            <div class="flex">
+                                <div class="w-[2rem] h-[1.5rem] py-7">
+                                    <img src="./images/india-flag-icon.svg" alt="">
+                                </div>
+                                <div class="py-8 ">
+                                    <img src="./images/Icons/keyboard_arrow_down_29dp_7D7D7D_FILL0_wght400_GRAD0_opsz24.svg">
+                                </div>
+        
+                                <!-- Buttons -->
+                                <div class="py-5 flex">
+        
+                                    <div class="px-3">
+                                        <button
+                                            class="border border-nav_blue w-[71.43px] h-[36px] text-nav_button_blue rounded-md text-sm font-medium">
+                                            Login
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="border bg-nav_button_blue w-[100.43px] h-[37px] text-white text-sm rounded-md font-medium">
+                                            Sign Up &#8594;
+                                        </button>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <!-- Hero section -->
+            <div class="w-full max-w-[1184px] ">
+                <div>
+                    <div class="flex-grow"></div>
+                    <div class="w-full">
+                        <div class="relative w-full h-auto overflow-hidden">
+                            <div id="carousel" class="flex transition-transform duration-500 relative">
+                                <!-- Slide 1 -->
+                                <div class="min-w-full object-cover relative">
+                                    <div class="absolute top-16 md:top-32 px-4 md:px-0 z-10">
+                                        <p class="font-semibold text-2xl md:text-5xl mb-3 text-hero_heading_blue font-tasa">Advanced payment solutions</p>
+                                        <p class="font-semibold text-2xl md:text-5xl text-logo_text_black font-tasa">for India's finest disruptors</p>
+                                        <br>
+                                        <p class="text-grey_text_300 font-inter text-xs md:text-sm">100+ Payment Methods | Easy Integrations | Powerful Dashboards</p>
+                                        <div class="flex items-baseline py-6">
+                                            <div class="pr-4 ">
+                                                <button class="bg-nav_button_blue font-inter font-semibold text-white text-sm md:text-base py-3 px-4 rounded">Sign Up Now &#8594;</button>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="font-semibold text-hero_heading_blue">Know More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <img src="./images/herobg1.avif" alt="Gym girl Image 1" class="w-full max-w-[600px] md:max-w-[900px] h-auto object-cover" />
+                                    </div>
+
+                                </div>
+        
+                                <!-- Slide 2 -->
+                                <div class="min-w-full object-cover relative">
+                                    <div class="absolute top-16 md:top-32 px-4 md:px-0 z-10">
+                                        <p class="font-semibold text-2xl md:text-5xl mb-3 text-hero_heading_blue font-tasa">Easy In-Person Payments</p>
+                                        <p class="font-semibold text-2xl md:text-5xl text-logo_text_black font-tasa">for India's finest disruptors</p>
+                                        <br>
+                                        <p class="text-grey_text_300 font-inter text-xs md:text-sm">Quick Payments | Seamless Integration | Top-tier UPI stack</p>
+                                        <div class="flex items-baseline py-6">
+                                            <div class="pr-4 ">
+                                                <button class="bg-nav_button_blue font-inter font-semibold text-white text-sm md:text-base py-3 px-4 rounded">Sign Up Now &#8594;</button>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="font-semibold text-hero_heading_blue">Know More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <img src="./images/herobg2.avif" alt="POS Guy" class="w-full max-w-[600px] md:max-w-[900px] h-auto object-cover" />
+                                    </div>
+                                </div>
+        
+                                <!-- Slide 3 -->
+                                <div class="min-w-full object-cover relative">
+                                    <div class="absolute top-16 md:top-32 px-4 md:px-0 z-10">
+                                        <p class="font-semibold text-2xl md:text-5xl mb-3 text-hero_heading_blue font-tasa">Effortless Banking</p>
+                                        <p class="font-semibold text-2xl md:text-5xl text-logo_text_black font-tasa">for India's finest disruptors</p>
+                                        <br>
+                                        <p class="text-grey_text_300 font-inter text-xs md:text-sm">Powerful Automation | Smart Dashboard | Integrated Access</p>
+                                        <div class="flex items-baseline py-6">
+                                            <div class="pr-4 ">
+                                                <button class="bg-nav_button_blue font-inter font-semibold text-white text-sm md:text-base py-3 px-4 rounded">Sign Up Now &#8594;</button>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="font-semibold text-hero_heading_blue">Know More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <img src="./images/herobg3.avif" alt="Farmer Guy" class="w-full max-w-[600px] md:max-w-[900px] h-auto object-cover" />
+                                    </div>
+
+                                </div>
+        
+                                <!-- Slide 4 -->
+                                <div class="min-w-full object-cover relative">
+                                    <div class="absolute top-16 md:top-32 px-4 md:px-0 z-10">
+                                        <p class="font-semibold text-2xl md:text-5xl mb-3 text-hero_heading_blue font-tasa">Automated Payroll</p>
+                                        <p class="font-semibold text-2xl md:text-5xl text-logo_text_black font-tasa">for India's finest disruptors</p>
+                                        <br>
+                                        <p class="text-grey_text_300 font-inter text-xs md:text-sm">Automated Payroll & Compliances | Built for Startups & Enterprises</p>
+                                        <div class="flex items-baseline py-6">
+                                            <div class="pr-4 ">
+                                                <button class="bg-nav_button_blue font-inter font-semibold text-white text-sm md:text-base py-3 px-4 rounded">Sign Up Now &#8594;</button>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="font-semibold text-hero_heading_blue">Know More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <img src="./images/herobg4.avif" alt="Singer Girl" class="w-full max-w-[600px] md:max-w-[900px] h-auto object-cover" />
+                                    </div>
+
+                                </div>
+        
+                                <!-- Repeat -->
+                                <div class="min-w-full object-cover relative">
+                                    <div class="absolute top-16 md:top-32 px-4 md:px-0 z-10">
+                                        <p class="font-semibold text-2xl md:text-5xl mb-3 text-hero_heading_blue font-tasa">Advanced payment solutions</p>
+                                        <p class="font-semibold text-2xl md:text-5xl text-logo_text_black font-tasa">for India's finest disruptors</p>
+                                        <br>
+                                        <p class="text-grey_text_300 font-inter text-xs md:text-sm">100+ Payment Methods | Easy Integrations | Powerful Dashboards</p>
+                                        <div class="flex items-baseline py-6">
+                                            <div class="pr-4 ">
+                                                <button class="bg-nav_button_blue font-inter font-semibold text-white text-sm md:text-base py-3 px-4 rounded">Sign Up Now &#8594;</button>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="font-semibold text-hero_heading_blue">Know More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <img src="./images/herobg1.avif" alt="Gym girl Image 1" class="w-full max-w-[600px] md:max-w-[900px] h-auto object-cover" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-lg rounded-md flex" >
+                        <div class="py-5">
+                            <div class="rounded-xl h-6 w-1 bg-nav_button_blue"></div>
+                        </div>
+                        <div class="flex justify-between group font-inter text-xs p-5 shadow-lg">
+                            
+                            <div class="flex justify-center items-center">
+                                <img src="./images/Icons/explore_20dp_E8EAED_FILL0_wght400_GRAD0_opsz20.svg" alt="">
+                                <p class="pl-1">I'm here to</p>
+                            </div>
+                            <div class="py-1 px-3 bg-bubble rounded-md shadow-md">Accept Payments</div>
+                            <div class="py-1 px-3 bg-bubble rounded-md shadow-md">Make Payments</div>
+                            <div class="py-1 px-3 bg-bubble rounded-md shadow-md">Start Business Banking</div>
+                            <div class="py-1 px-3 bg-bubble rounded-md shadow-md">Get Credit Loans</div>
+                            <div class="py-1 px-3 bg-bubble rounded-md shadow-md">Automate Payroll</div>
+                            
+                        </div>
+                        <div class="py-5 pl-36 text-grey_text_200">//Find the best product for your businesses</div>
+                    </div>
+
+                </div>
+            </div>                                <!--pt-6 pb-12 pl-6 pr-0-->
+        </div>
+
+
+        <div class="logos h-28">
+            <div class="logosslider flex pt-6 pb-6 pl-6 pr-0 gap-8 justify-center items-center">
+                <img class="h-9" src="./images/1.avif">
+                <img class="h-24" src="./images/2.avif">
+                <img class="h-16" src="./images/3.avif">
+                <img class="h-8" src="./images/4.avif">
+                <img class="h-8" src="./images/5.avif">
+                <img class="h-12" src="./images/6.avif">
+                <img class="h-9" src="./images/7.avif">
+                <img class="h-12" src="./images/8.avif">
+                <img class="h-9" src="./images/9.avif">
+                <img class="h-9" src="./images/10.png">
+                <img class="h-28" src="./images/11.png">
+                <img class="h-9" src="./images/12.avif">
+                <img class="h-9" src="./images/13.avif">
+                <img class="h-12" src="./images/14.avif">
+                <img class="h-9" src="./images/15.avif">
+            </div>
+            <div class="logosslider flex pt-6 pb-6 pl-6 pr-0 gap-8 justify-center items-center">
+                <img class="h-9" src="./images/1.avif">
+                <img class="h-24" src="./images/2.avif">
+                <img class="h-16" src="./images/3.avif">
+                <img class="h-9" src="./images/4.avif">
+                <img class="h-9" src="./images/5.avif">
+                <img class="h-12" src="./images/6.avif">
+                <img class="h-9" src="./images/7.avif">
+                <img class="h-12" src="./images/8.avif">
+                <img class="h-9" src="./images/9.avif">
+                <img class="h-9" src="./images/10.png">
+                <img class="h-36" src="./images/11.png">
+                <img class="h-9" src="./images/12.avif">
+                <img class="h-9" src="./images/13.avif">
+                <img class="h-12" src="./images/14.avif">
+                <img class="h-9" src="./images/15.avif">
+            </div>
+        </div>
+        
+        
+        
+    </body>
+
+    <script>
+        const carousel = document.getElementById("logos_slider");
+        const totalImages = carousel.children.length - 1; // Number of original images
+        let index = 0;
+
+        function moveToNextSlide() {
+            index++;
+            if (index > totalImages) {
+                
+                index = 1; 
+                carousel.style.transition = 'none'; 
+                carousel.style.transform = 'translateX(0)'; 
+                setTimeout(() => {
+                    carousel.style.transition = 'transform 0.5s'; 
+                }, 50); 
+            } else {
+                const offset = -index * 100; 
+                carousel.style.transform = `translateX(${offset}%)`;
+            }
+        }
+        setInterval(moveToNextSlide, 3000); 
+    </script>
+</html>
