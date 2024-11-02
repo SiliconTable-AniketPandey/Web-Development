@@ -19,7 +19,7 @@ module.exports = {
         black_bold_text: "#192839",
         green_bold_text: "#009E5C",
         developer_blue: "#032A3E",
-        nav_gradient: "#f4f4ff",
+        nav_gradient: "#Eff4ff",
         sub_text: "#768EA7",
         new_text: "#008743",
         bg_new_text: "#00A25117",
