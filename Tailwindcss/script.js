@@ -56,3 +56,164 @@ Array.from(cards).forEach((card, index) => {
         })})`
     })
 })
+
+// //Third Page
+// // Click scroll effect
+
+const carouselTrack = document.getElementById('carousel-track');
+const cards_click = Array.from(document.querySelectorAll('.carousel-card'));
+
+// Clone first and last elements for seamless transition
+const firstClone = cards_click[0].cloneNode(true);
+const lastClone = cards_click[cards_click.length - 1].cloneNode(true);
+carouselTrack.appendChild(firstClone);
+carouselTrack.insertBefore(lastClone, cards_click[0]);
+
+// Update variables
+let currentIndex = 1; // Start at the first original card (after the last clone)
+const totalCards = cards_click.length + 2; // Include the cloned cards
+const cardWidth = carouselTrack.clientWidth; // Set width for each card
+
+// Initial positioning
+carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+// Navigation functions
+document.getElementById('next').addEventListener('click', () => {
+    currentIndex++;
+    updateCarouselPosition();
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+    currentIndex--;
+    updateCarouselPosition();
+});
+
+function updateCarouselPosition() {
+    carouselTrack.style.transition = 'transform 0.5s ease';
+    carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+    // Loop to the start or end based on position
+    if (currentIndex >= totalCards - 1) {
+        // Jump to first original card from the last clone
+        setTimeout(() => {
+            carouselTrack.style.transition = 'none';
+            currentIndex = 1; // Reset to the first original card
+            carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }, 500); // Wait for transition to complete
+    } else if (currentIndex <= 0) {
+        // Jump to last original card from the first clone
+        setTimeout(() => {
+            carouselTrack.style.transition = 'none';
+            currentIndex = totalCards - 2; // Reset to the last original card
+            carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }, 500);
+    }
+}
+
+// First Carousel Setup
+function setupCarousel1() {
+    const carouselTrack = document.getElementById('carousel-track');
+    const cards_click = Array.from(document.querySelectorAll('.carousel-card'));
+
+    // Clone first and last elements for seamless transition
+    const firstClone = cards_click[0].cloneNode(true);
+    const lastClone = cards_click[cards_click.length - 1].cloneNode(true);
+    carouselTrack.appendChild(firstClone);
+    carouselTrack.insertBefore(lastClone, cards_click[0]);
+
+    // Update variables
+    let currentIndex = 1; // Start at the first original card (after the last clone)
+    const totalCards = cards_click.length + 2; // Include the cloned cards
+    const cardWidth = carouselTrack.clientWidth; // Set width for each card
+
+    // Initial positioning
+    carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+    // Navigation functions
+    document.getElementById('next').addEventListener('click', () => {
+        currentIndex++;
+        updateCarouselPosition();
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+        currentIndex--;
+        updateCarouselPosition();
+    });
+
+    function updateCarouselPosition() {
+        carouselTrack.style.transition = 'transform 0.5s ease';
+        carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+        // Loop to the start or end based on position
+        if (currentIndex >= totalCards - 1) {
+            // Jump to first original card from the last clone
+            setTimeout(() => {
+                carouselTrack.style.transition = 'none';
+                currentIndex = 1; // Reset to the first original card
+                carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            }, 500); // Wait for transition to complete
+        } else if (currentIndex <= 0) {
+            // Jump to last original card from the first clone
+            setTimeout(() => {
+                carouselTrack.style.transition = 'none';
+                currentIndex = totalCards - 2; // Reset to the last original card
+                carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            }, 500);
+        }
+    }
+}
+
+// Second Carousel Setup
+function setupCarousel2() {
+    const carouselTrack = document.getElementById('carousel-track2');
+    const cards_click = Array.from(document.querySelectorAll('.carousel-card2'));
+
+    // Define the initial number of visible cards and total number of cards
+    const visibleCards = 3;
+    let currentIndex = 0;
+    const cardWidth = carouselTrack.clientWidth / visibleCards; // Width per card
+    const maxIndex = cards_click.length - visibleCards; // Max index based on total cards and visible set
+
+    // Adjust each card to match width for 3 visible cards
+    cards_click.forEach(card => {
+        card.style.minWidth = `${cardWidth}px`;
+    });
+
+    // Initial positioning
+    carouselTrack.style.transform = `translateX(0px)`;
+
+    // Navigation functions
+    document.getElementById('next2').addEventListener('click', () => {
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateCarouselPosition();
+        }
+    });
+
+    document.getElementById('prev2').addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarouselPosition();
+        }
+    });
+
+    function updateCarouselPosition() {
+        carouselTrack.style.transition = 'transform 0.5s ease';
+        carouselTrack.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+}
+
+
+
+
+
+// Initialize both carousels
+setupCarousel1();
+setupCarousel2();
+
+
+
+
+
+
+
