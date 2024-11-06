@@ -2,7 +2,7 @@ const { transformWithEsbuild } = require('vite');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ["./index.html","./main.css","./main.js" ],
   theme: {
     extend: {
       boxShadow: {
