@@ -212,6 +212,13 @@ setupCarousel1();
 setupCarousel2();
 
 
+function toggleDropdown(id) {
+    var content = document.getElementById(id);
+    content.classList.toggle('hidden');
+}
+
+
+
 
 
 

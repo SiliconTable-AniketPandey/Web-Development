@@ -34,7 +34,9 @@ module.exports = {
         editor_bg: "#C6F076",
         editor_title: "#0D3246",
         warning_orange:"#E9690C17",
-        warning_text: "#40566D"
+        warning_text: "#40566D",
+        mobile_card_blue: "#203553",
+        mobile_dropdown_button:"#F1F5FA"
       },
     },
   },

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .logos {
     display: flex;
     overflow: hidden;
@@ -205,3 +207,26 @@
 .Code_Editor:hover button {
     display: block;
 }
+
+#dropdownContent1,
+#dropdownContent2,
+#dropdownContent3,
+#dropdownContent4,
+#dropdownContent5 {
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+@media (max-width: 640px) {
+    #dropdownContent .absolute {
+        position: relative; /* Change from absolute to relative */
+        margin-top: 1rem; /* Add margin to create space */
+    }
+}
+
+  

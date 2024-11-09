@@ -9,13 +9,13 @@ let b = true;
 
 console.log(b);
 
-if (true){
-    var aa = 14;
-    console.log(aa);
-}
+// if (true){
+//     var aa = 14;
+//     console.log(aa);
+// }
 
 
-console.log(aa);
+// console.log(aa);
 
 
 //constants
@@ -59,3 +59,18 @@ console.log(names)
 
 names[0] = "Manoj";
 console.log(names);
+
+let h = 10;
+
+console.log(--h)
+console.log(h--)
+
+let aa = 5;
+let bb = 10;
+
+let ans1 = (++aa) * (--bb); console.log(ans1);
+let ans2 = (aa++) * (--bb); console.log(ans2);
+let ans3 = (aa++) * (bb--); console.log(ans3);
+let ans4 = (++aa) * (bb--); console.log(ans4);
+
+console.log(2>3)
