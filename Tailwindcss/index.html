@@ -16,14 +16,18 @@
 </head>
 
 <body class="box-border overflow-y-auto  m-0 p-0 ">
+
+
+    
+
     <nav class="navbar w-full sticky top-0 bg-gradient-to-t from-white via-nav_gradient to-white z-20">
         <div class="max-w-[1184px] w-full flex items-center sm:px-6 lg:px-8 mx-auto">
             <div class="py-4 flex w-full justify-between items-baseline ">
                     <!-- logo -->
-                   <div class="flex justify-center items-center">
-                    <a href="index.html" class="cursor-pointer ">
-                        <img class="sm:h-7 md:h-[30px]" src="./images/razorpay-icon.svg" />
-                    </a>
+                   <div class="flex justify-center items-center lg:px-0 px-6">
+                        <a href="index.html" class="cursor-pointer ">
+                            <img class="h-7 lg:h-[30px]" src="./images/razorpay-icon.svg" />
+                        </a>
                    </div>
 
                     <ul class="hidden space-x-6 lg:flex">
@@ -1431,7 +1435,7 @@
 
 
         <!-- Second Page -->
-        <div class="flex flex-col  lg:max-w-[1300px]  lg:px-10 relative z-[8]">
+        <div class="flex flex-col  lg:max-w-[1300px]  lg:px-10 relative z-[8] mx-auto">
             <div class="sm:flex-row sm:gap-2 px-6 md:px-10 pt-20 pb-1">
                 <div class="max-w-[784px] leading-loose">
                     <span class="font-tasa text-black_bold_text text-4xl lg:text-[56px] font-semibold">
@@ -2311,189 +2315,214 @@
                     </div>
 
                     <!-- Mobile view -->
-                    <div class="lg:hidden flex flex-col justify-center items-center ">
+                    <div class="lg:hidden flex flex-col px-16 ">
                         <div class="font-tasa text-black_bold_text text-3xl font-semibold">
                             <h1 class="font-semibold">We have got you <h1>Covered no matter</h1><h1>what <span class="text-green_bold_text">industry you</span><h1 class="text-green_bold_text">are disrupting</h1></h1></h1>
                         </div>
 
-                        <div class="flex flex-col justify-center items-center gap-4">
+                        <div class="flex flex-col justify-center items-center py-12 gap-4">
                             <!-- Dropdown Button -->
-                            <button onclick="toggleDropdown('dropdownContent1')" class="lg:hidden px-16 py-2 bg-mobile_dropdown_button rounded-md">
+                            <button onclick="toggleDropdown('dropdownContent1')" class="lg:hidden px-24 py-1 bg-mobile_dropdown_button rounded-md">
                                 Show More
                             </button>
                         
                             <!-- Dropdown Content -->
                             <div id="dropdownContent1" class="hidden mt-4">
-                                <img class="rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                <div class="flex flex-col">
+                                    <div class="">
+                                        <img class=" rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                    </div>
+                                    
                                 
-                                <!-- Card -->
-                                <div class="absolute bg-white w-[90%] sm:w-[570px] sm:top-16 top-4 sm:left-14 left-4 rounded-md">
-                                    <div class="px-6 sm:px-8 py-6 sm:py-10">
-                                        <div class="text-2xl sm:text-4xl font-tasa font-semibold">
-                                            <div class="text-black_bold_text">Empower your</div>
-                                            <div class="text-green_bold_text">e-commerce business</div>
-                                        </div>
-                                        <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
-                                            Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
-                                        </div>
-                                        <div class="py-8 sm:py-12 flex gap-4">
-                                            <div class="flex h-6 grayscale gap-4">
-                                                <img src="./images/nykaa.avif" alt="">
-                                                <img src="./images/decathlon.avif" alt="">
-                                                <img src="./images/zomato.avif" alt="">
-                                                <img src="./images/flipkart.svg" alt="">
+                                    <!-- Card -->
+                                    <div class=" bg-mobile_dropdown_button   rounded-md ">
+                                        <div class="px-6 sm:px-8 py-6 sm:py-10">
+                                            <div class="text-2xl sm:text-4xl font-tasa font-semibold">
+                                                <div class="text-black_bold_text">Empower your</div>
+                                                <div class="text-green_bold_text">e-commerce business</div>
                                             </div>
-                                            <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
-                                                <p>+70,000 others</p>
+                                            <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
+                                                Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
                                             </div>
+                                            <div class="py-8 sm:py-12 flex gap-4">
+                                                <div class="flex h-3 grayscale gap-4">
+                                                    <img src="./images/nykaa.avif" alt="">
+                                                    <img src="./images/decathlon.avif" alt="">
+                                                    <img src="./images/zomato.avif" alt="">
+                                                    <img src="./images/flipkart.svg" alt="">
+                                                </div>
+                                                <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
+                                                    <p>+70,000 others</p>
+                                                </div>
+                                            </div>
+                                            <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
+                                                See Solutions &#8594;
+                                            </button>
                                         </div>
-                                        <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
-                                            See Solutions &#8594;
-                                        </button>
                                     </div>
                                 </div>
                             </div>
 
-                            <button onclick="toggleDropdown('dropdownContent2')" class="lg:hidden px-16 py-2 bg-mobile_dropdown_button rounded-md">
+                            <button onclick="toggleDropdown('dropdownContent2')" class="lg:hidden px-24 py-2 bg-mobile_dropdown_button rounded-md">
                                 Show More
                             </button>
                         
                             <!-- Dropdown Content -->
                             <div id="dropdownContent2" class="hidden mt-4">
-                                <img class="rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                <div class="flex flex-col">
+                                    <div class="">
+                                        <img class=" rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                    </div>
+                                    
                                 
-                                <!-- Card -->
-                                <div class="absolute bg-white w-[90%] sm:w-[570px] sm:top-16 top-4 sm:left-14 left-4 rounded-md">
-                                    <div class="px-6 sm:px-8 py-6 sm:py-10">
-                                        <div class="text-2xl sm:text-4xl font-tasa font-semibold">
-                                            <div class="text-black_bold_text">Empower your</div>
-                                            <div class="text-green_bold_text">e-commerce business</div>
-                                        </div>
-                                        <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
-                                            Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
-                                        </div>
-                                        <div class="py-8 sm:py-12 flex gap-4">
-                                            <div class="flex h-6 grayscale gap-4">
-                                                <img src="./images/nykaa.avif" alt="">
-                                                <img src="./images/decathlon.avif" alt="">
-                                                <img src="./images/zomato.avif" alt="">
-                                                <img src="./images/flipkart.svg" alt="">
+                                    <!-- Card -->
+                                    <div class=" bg-mobile_dropdown_button   rounded-md ">
+                                        <div class="px-6 sm:px-8 py-6 sm:py-10">
+                                            <div class="text-2xl sm:text-4xl font-tasa font-semibold">
+                                                <div class="text-black_bold_text">Empower your</div>
+                                                <div class="text-green_bold_text">e-commerce business</div>
                                             </div>
-                                            <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
-                                                <p>+70,000 others</p>
+                                            <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
+                                                Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
                                             </div>
+                                            <div class="py-8 sm:py-12 flex gap-4">
+                                                <div class="flex h-3 grayscale gap-4">
+                                                    <img src="./images/nykaa.avif" alt="">
+                                                    <img src="./images/decathlon.avif" alt="">
+                                                    <img src="./images/zomato.avif" alt="">
+                                                    <img src="./images/flipkart.svg" alt="">
+                                                </div>
+                                                <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
+                                                    <p>+70,000 others</p>
+                                                </div>
+                                            </div>
+                                            <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
+                                                See Solutions &#8594;
+                                            </button>
                                         </div>
-                                        <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
-                                            See Solutions &#8594;
-                                        </button>
                                     </div>
                                 </div>
                             </div>
 
-                            <button onclick="toggleDropdown('dropdownContent3')" class="lg:hidden px-16 py-2 bg-mobile_dropdown_button rounded-md">
+                            <button onclick="toggleDropdown('dropdownContent3')" class="lg:hidden px-24 py-2 bg-mobile_dropdown_button rounded-md">
                                 Show More
                             </button>
                         
                             <!-- Dropdown Content -->
                             <div id="dropdownContent3" class="hidden mt-4">
-                                <img class="rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                <div class="flex flex-col">
+                                    <div class="">
+                                        <img class=" rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                    </div>
+                                    
                                 
-                                <!-- Card -->
-                                <div class="absolute bg-white w-[90%] sm:w-[570px] sm:top-16 top-4 sm:left-14 left-4 rounded-md">
-                                    <div class="px-6 sm:px-8 py-6 sm:py-10">
-                                        <div class="text-2xl sm:text-4xl font-tasa font-semibold">
-                                            <div class="text-black_bold_text">Empower your</div>
-                                            <div class="text-green_bold_text">e-commerce business</div>
-                                        </div>
-                                        <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
-                                            Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
-                                        </div>
-                                        <div class="py-8 sm:py-12 flex gap-4">
-                                            <div class="flex h-6 grayscale gap-4">
-                                                <img src="./images/nykaa.avif" alt="">
-                                                <img src="./images/decathlon.avif" alt="">
-                                                <img src="./images/zomato.avif" alt="">
-                                                <img src="./images/flipkart.svg" alt="">
+                                    <!-- Card -->
+                                    <div class=" bg-mobile_dropdown_button   rounded-md ">
+                                        <div class="px-6 sm:px-8 py-6 sm:py-10">
+                                            <div class="text-2xl sm:text-4xl font-tasa font-semibold">
+                                                <div class="text-black_bold_text">Empower your</div>
+                                                <div class="text-green_bold_text">e-commerce business</div>
                                             </div>
-                                            <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
-                                                <p>+70,000 others</p>
+                                            <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
+                                                Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
                                             </div>
+                                            <div class="py-8 sm:py-12 flex gap-4">
+                                                <div class="flex h-3 grayscale gap-4">
+                                                    <img src="./images/nykaa.avif" alt="">
+                                                    <img src="./images/decathlon.avif" alt="">
+                                                    <img src="./images/zomato.avif" alt="">
+                                                    <img src="./images/flipkart.svg" alt="">
+                                                </div>
+                                                <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
+                                                    <p>+70,000 others</p>
+                                                </div>
+                                            </div>
+                                            <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
+                                                See Solutions &#8594;
+                                            </button>
                                         </div>
-                                        <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
-                                            See Solutions &#8594;
-                                        </button>
                                     </div>
                                 </div>
                             </div>
 
-                            <button onclick="toggleDropdown('dropdownContent4')" class="lg:hidden px-16 py-2 bg-mobile_dropdown_button rounded-md">
+                            <button onclick="toggleDropdown('dropdownContent4')" class="lg:hidden px-24 py-2 bg-mobile_dropdown_button rounded-md">
                                 Show More
                             </button>
                         
                             <!-- Dropdown Content -->
                             <div id="dropdownContent4" class="hidden mt-4">
-                                <img class="rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                <div class="flex flex-col">
+                                    <div class="">
+                                        <img class=" rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                    </div>
+                                    
                                 
-                                <!-- Card -->
-                                <div class="absolute bg-white w-[90%] sm:w-[570px] sm:top-16 top-4 sm:left-14 left-4 rounded-md">
-                                    <div class="px-6 sm:px-8 py-6 sm:py-10">
-                                        <div class="text-2xl sm:text-4xl font-tasa font-semibold">
-                                            <div class="text-black_bold_text">Empower your</div>
-                                            <div class="text-green_bold_text">e-commerce business</div>
-                                        </div>
-                                        <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
-                                            Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
-                                        </div>
-                                        <div class="py-8 sm:py-12 flex gap-4">
-                                            <div class="flex h-6 grayscale gap-4">
-                                                <img src="./images/nykaa.avif" alt="">
-                                                <img src="./images/decathlon.avif" alt="">
-                                                <img src="./images/zomato.avif" alt="">
-                                                <img src="./images/flipkart.svg" alt="">
+                                    <!-- Card -->
+                                    <div class=" bg-mobile_dropdown_button   rounded-md ">
+                                        <div class="px-6 sm:px-8 py-6 sm:py-10">
+                                            <div class="text-2xl sm:text-4xl font-tasa font-semibold">
+                                                <div class="text-black_bold_text">Empower your</div>
+                                                <div class="text-green_bold_text">e-commerce business</div>
                                             </div>
-                                            <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
-                                                <p>+70,000 others</p>
+                                            <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
+                                                Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
                                             </div>
+                                            <div class="py-8 sm:py-12 flex gap-4">
+                                                <div class="flex h-3 grayscale gap-4">
+                                                    <img src="./images/nykaa.avif" alt="">
+                                                    <img src="./images/decathlon.avif" alt="">
+                                                    <img src="./images/zomato.avif" alt="">
+                                                    <img src="./images/flipkart.svg" alt="">
+                                                </div>
+                                                <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
+                                                    <p>+70,000 others</p>
+                                                </div>
+                                            </div>
+                                            <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
+                                                See Solutions &#8594;
+                                            </button>
                                         </div>
-                                        <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
-                                            See Solutions &#8594;
-                                        </button>
                                     </div>
                                 </div>
                             </div>
 
-                            <button onclick="toggleDropdown('dropdownContent5')" class="lg:hidden px-16 py-2 bg-mobile_dropdown_button rounded-md">
+                            <button onclick="toggleDropdown('dropdownContent5')" class="lg:hidden px-24 py-2 bg-mobile_dropdown_button rounded-md">
                                 Show More
                             </button>
                         
                             <!-- Dropdown Content -->
                             <div id="dropdownContent5" class="hidden mt-4">
-                                <img class="rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                <div class="flex flex-col">
+                                    <div class="">
+                                        <img class=" rounded-md w-full object-cover" src="./images/third page hero.avif" alt="">
+                                    </div>
+                                    
                                 
-                                <!-- Card -->
-                                <div class="absolute bg-white w-[90%] sm:w-[570px] sm:top-16 top-4 sm:left-14 left-4 rounded-md">
-                                    <div class="px-6 sm:px-8 py-6 sm:py-10">
-                                        <div class="text-2xl sm:text-4xl font-tasa font-semibold">
-                                            <div class="text-black_bold_text">Empower your</div>
-                                            <div class="text-green_bold_text">e-commerce business</div>
-                                        </div>
-                                        <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
-                                            Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
-                                        </div>
-                                        <div class="py-8 sm:py-12 flex gap-4">
-                                            <div class="flex h-6 grayscale gap-4">
-                                                <img src="./images/nykaa.avif" alt="">
-                                                <img src="./images/decathlon.avif" alt="">
-                                                <img src="./images/zomato.avif" alt="">
-                                                <img src="./images/flipkart.svg" alt="">
+                                    <!-- Card -->
+                                    <div class=" bg-mobile_dropdown_button   rounded-md ">
+                                        <div class="px-6 sm:px-8 py-6 sm:py-10">
+                                            <div class="text-2xl sm:text-4xl font-tasa font-semibold">
+                                                <div class="text-black_bold_text">Empower your</div>
+                                                <div class="text-green_bold_text">e-commerce business</div>
                                             </div>
-                                            <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
-                                                <p>+70,000 others</p>
+                                            <div class="text-xs sm:text-sm font-inter text-grey_text_200 mt-2 sm:mt-4">
+                                                Streamline payment management with a unified dashboard, enabling both online and in-person payment collection while enhancing conversion rates and minimizing fraud.
                                             </div>
+                                            <div class="py-8 sm:py-12 flex gap-4">
+                                                <div class="flex h-3 grayscale gap-4">
+                                                    <img src="./images/nykaa.avif" alt="">
+                                                    <img src="./images/decathlon.avif" alt="">
+                                                    <img src="./images/zomato.avif" alt="">
+                                                    <img src="./images/flipkart.svg" alt="">
+                                                </div>
+                                                <div class="font-inter text-xs sm:text-sm text-grey_text_200 py-1">
+                                                    <p>+70,000 others</p>
+                                                </div>
+                                            </div>
+                                            <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
+                                                See Solutions &#8594;
+                                            </button>
                                         </div>
-                                        <button class="bg-nav_button_blue font-inter font-semibold text-white text-xs sm:text-sm md:text-base py-2 sm:py-3 px-3 sm:px-4 rounded">
-                                            See Solutions &#8594;
-                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -2553,9 +2582,9 @@
         <!-- Third half page -->
 
         <div class="w-auto h-auto bg-nav_gradient py-16 mb-20">
-            <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 relative">
+            <div class="flex flex-col w-full lg:max-w-[1270px] max-w-[425px] mx-auto lg:px-10 relative">
 
-                <div class="py-8 text-4xl text-black_bold_text font-tasa font-semibold">
+                <div class="py-8 text-4xl lg:px-0 px-6 text-black_bold_text font-tasa font-semibold">
                     We have innovated at every instance, creating a disruption.
                 </div>
                 <div>
@@ -2567,17 +2596,17 @@
                         </button>
 
                         <!-- Carousel Track -->
-                        <div id="carousel-track" class="carousel-track flex">
+                        <div id="carousel-track" class="carousel-track flex ">
                             <!-- Card 1 -->
                             <div class="carousel-card ">
-                                <div class="py-6 px-4 pr-12 bg-white rounded-md shadow-lg">
+                                <div class="py-6 px-4 pr-12 bg-white rounded-md shadow-lg ">
                                     <div class="text-sm text-grey_text_200 font-inter font-semibold">MoneySaver Export
                                         Account</div>
                                     <div class="px-5">
-                                        <span class="text-5xl font-tasa font-semibold text-nav_blue">
+                                        <span class="lg:text-5xl text-lg font-tasa font-semibold text-nav_blue">
                                             Open a virtual account in 200+ countries,
                                         </span>
-                                        <span class="text-5xl font-tasa font-semibold text-black_bold_text">
+                                        <span class="lg:text-5xl text-lg font-tasa font-semibold text-black_bold_text">
                                             save up to 50% on international bank transfer charges. Receive
                                             ACH/SWIFT/SEPA/BACS payments
                                         </span>
@@ -2601,7 +2630,7 @@
                                 <div class="p-6 bg-white rounded-md shadow-md">
                                     <div class="text-sm text-grey_text_200 font-inter font-semibold">Turbo UPI</div>
                                     <div class="px-5">
-                                        <span class="text-2xl font-tasa font-semibold text-nav_blue">
+                                        <span class="lg:text-2xl text-lg font-tasa font-semibold text-nav_blue">
                                             Experience a 5X faster checkout,
                                         </span>
                                         <span class="text-2xl font-tasa font-semibold text-black_bold_text">
@@ -2632,7 +2661,7 @@
                                     <div class="text-sm text-grey_text_200 font-inter font-semibold">Line of Credit
                                     </div>
                                     <div class="px-5">
-                                        <span class="text-2xl font-tasa font-semibold text-nav_blue">
+                                        <span class="lg:text-2xl  text-lg font-tasa font-semibold text-nav_blue">
                                             Get a ₹50L collateral-free credit line
                                         </span>
                                         <span class="text-2xl font-tasa font-semibold text-black_bold_text">
@@ -2658,10 +2687,10 @@
                                 <div class="py-6 px-4 pr-12 bg-white rounded-md shadow-md">
                                     <div class="text-sm text-grey_text_200 font-inter font-semibold">Magic Checkout</div>
                                     <div class="px-5">
-                                        <span class="text-5xl font-tasa font-semibold text-nav_blue">
+                                        <span class="lg:text-5xl text-lg font-tasa font-semibold text-nav_blue">
                                             Witness a 40% increase in conversions,
                                         </span>
-                                        <span class="text-5xl font-tasa font-semibold text-black_bold_text">
+                                        <span class="lg:text-5xl text-lg font-tasa font-semibold text-black_bold_text">
                                             enjoy a 5X quicker checkout process, and reduce RTOs by 50%.
                                         </span>
                                     </div>
@@ -2687,10 +2716,10 @@
                                 <div class="py-6 px-4 pr-12 bg-white rounded-md shadow-md">
                                     <div class="text-sm text-grey_text_200 font-inter font-semibold">Optimizer</div>
                                     <div class="px-5">
-                                        <span class="text-5xl font-tasa font-semibold text-nav_blue">
+                                        <span class="lg:text-5xl text-lg font-tasa font-semibold text-nav_blue">
                                             Utilise 15+ payment gateways for all Aggregators
                                         </span>
-                                        <span class="text-5xl font-tasa font-semibold text-black_bold_text">
+                                        <span class="lg:text-5xl text-lg font-tasa font-semibold text-black_bold_text">
                                             improve success rates by 10% with zero downtime, and cut charges/fees by 15-30%.
                                         </span>
                                     </div>
@@ -2713,7 +2742,7 @@
                                 <div class="p-6 bg-white rounded-md shadow-md">
                                     <div class="text-sm text-grey_text_200 font-inter font-semibold">Payouts Pro</div>
                                     <div class="px-5">
-                                        <span class="text-2xl font-tasa font-semibold text-nav_blue">
+                                        <span class="lg:text-2xl  text-lg font-tasa font-semibold text-nav_blue">
                                             Automate real-time routing across multiple accounts
                                         </span>
                                         <span class="text-2xl font-tasa font-semibold text-black_bold_text">
@@ -2751,9 +2780,29 @@
 
         <!-- Forth Page -->
         <!-- Developer Page -->
-        <div class="w-auto h-auto bg-developer_blue py-5 pb-24">
-            <div class="logos_developer h-12 bg-green_bold_text text-developer_text font-semibold font-lato mb-32 ">
+        <div class="w-auto h-auto bg-developer_blue py-5 lg:pb-24">
+            <div class="logos_developer h-12 bg-green_bold_text text-developer_text font-semibold font-lato mb-32 hidden lg:flex">
                 <div class="logosslider_developer flex pt-6 pb-6 pl-6 pr-0 gap-8 justify-center items-center">
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
                     <div>CURL •</div>
                     <div>JAVA •</div>
                     <div>PYTHON •</div>
@@ -2796,22 +2845,43 @@
                     <div>PYTHON •</div>
                     <div>PHP •</div>
                     <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
                 </div>
+                
             </div>
 
 
 
 
-            <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 relative">
-                <div class="font-tasa text-6xl font-semibold">
-                    <div class="text-white">
+            <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 relative pt-16">
+                <div class="font-tasa lg:text-6xl text-4xl font-semibold lg:px-0 px-6">
+                    <div class="text-white ">
                         Razorpay is built
                     </div>
                     <div class="text-green_bold_text">
                         &lt;for developers by developers&gt;
                     </div>
                 </div>
-                <div class="flex gap-14 py-12 mb-6">
+                <div class="lg:flex gap-14 py-12 mb-6 grid grid-cols-1 lg:px-0 px-6">
                     <div>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px"
@@ -2886,7 +2956,7 @@
                     </div>
                 </div>
 
-                <div class="flex justify-between">
+                <div class="lg:flex justify-between hidden ">
                     <div class="font-lato text-4xl text-white">
                         <div>
                             Try it out
@@ -2918,17 +2988,104 @@
                 </div>
 
             </div>
+            <div class="logos_developer h-12 bg-green_bold_text text-developer_text font-semibold font-lato  lg:hidden">
+                <div class="logosslider_developer flex  gap-8 justify-center items-center">
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                </div>
+                <div class="logosslider_developer flex gap-8 justify-center items-center">
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                    <div>CURL •</div>
+                    <div>JAVA •</div>
+                    <div>PYTHON •</div>
+                    <div>PHP •</div>
+                    <div>NODE JS •</div>
+                </div>
+                
+            </div>
         </div>
 
 
         <!-- Fifth Page -->
         <div class="w-auto h-auto bg-nav_gradient py-5 ">
-            <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 relative">
-                <div class="py-16">
+            <div class="flex flex-col w-full lg:max-w-[1270px] mx-auto lg:px-10 relative">
+                <div class="py-16 lg:px-0 px-6">
                     <div class="font-tasa text-grey_text_300 text-xl">
                         &lt;what html?&gt;
                     </div>
-                    <div class="font-tasa text-5xl font-semibold pb-20">
+                    <div class="font-tasa lg:text-5xl text-4xl font-semibold pb-20">
                         <div class="text-green_bold_text">
                             Not a developer?
                         </div>
@@ -2959,16 +3116,16 @@
                                         </svg>
                                     </div>
                                     <div class="">
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             Accept payments instantly:
                                         </div>
-                                        <span class="text-2xl font-tasa font-semibold text-nav_button_blue">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-nav_button_blue">
                                             share links
                                         </span>
-                                        <span class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             via email, text, or
                                         </span>
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             social
                                         </div>
                                     </div>
@@ -3006,16 +3163,16 @@
                                         </svg>
                                     </div>
                                     <div class="">
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             Accept payments instantly:
                                         </div>
-                                        <span class="text-2xl font-tasa font-semibold text-nav_button_blue">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-nav_button_blue">
                                             share links
                                         </span>
-                                        <span class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             via email, text, or
                                         </span>
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             social
                                         </div>
                                     </div>
@@ -3053,16 +3210,16 @@
                                         </svg>
                                     </div>
                                     <div class="">
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             Accept payments instantly:
                                         </div>
-                                        <span class="text-2xl font-tasa font-semibold text-nav_button_blue">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-nav_button_blue">
                                             share links
                                         </span>
-                                        <span class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             via email, text, or
                                         </span>
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             social
                                         </div>
                                     </div>
@@ -3100,16 +3257,16 @@
                                         </svg>
                                     </div>
                                     <div class="">
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             Accept payments instantly:
                                         </div>
-                                        <span class="text-2xl font-tasa font-semibold text-nav_button_blue">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-nav_button_blue">
                                             share links
                                         </span>
-                                        <span class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             via email, text, or
                                         </span>
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             social
                                         </div>
                                     </div>
@@ -3147,16 +3304,16 @@
                                         </svg>
                                     </div>
                                     <div class="">
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             Accept payments instantly:
                                         </div>
-                                        <span class="text-2xl font-tasa font-semibold text-nav_button_blue">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-nav_button_blue">
                                             share links
                                         </span>
-                                        <span class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             via email, text, or
                                         </span>
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             social
                                         </div>
                                     </div>
@@ -3194,16 +3351,16 @@
                                         </svg>
                                     </div>
                                     <div class="">
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             Accept payments instantly:
                                         </div>
-                                        <span class="text-2xl font-tasa font-semibold text-nav_button_blue">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-nav_button_blue">
                                             share links
                                         </span>
-                                        <span class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <span class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             via email, text, or
                                         </span>
-                                        <div class="text-2xl font-tasa font-semibold text-black_bold_text">
+                                        <div class="lg:text-2xl text-xl font-tasa font-semibold text-black_bold_text">
                                             social
                                         </div>
                                     </div>
@@ -3243,12 +3400,12 @@
 
         <div class="w-auto h-auto bg-white py-5 ">
             <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 relative py-12">
-                <div class="flex font-lato font-semibold text-6xl gap-2 justify-between">
+                <div class="lg:flex lg:px-0 px-6 font-lato font-semibold text-6xl lg:gap-2 justify-between items-baseline">
                     <div>
                         <span class="text-black_bold_text">Razorpay grows with </span>
                         <span class="text-nav_blue">you!</span>
                     </div>
-                    <div class="text-2xl">1,50,000+ Businesses</div>
+                    <div class="text-2xl lg:pt-0 pt-6">1,50,000+ Businesses</div>
                 </div>
             </div>
         </div>
@@ -3353,7 +3510,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 relative py-12">
+            <div class="flex flex-col w-full max-w-[1270px] px-6 mx-auto lg:px-10 relative py-12">
                 <div class="bg-warning_orange">
                     <div class="px-4 font-inter text-warning_text text-xs py-4">
                         To the fullest extent permitted by law, Razorpay Software Private Limited, its affiliates, and each
@@ -3378,8 +3535,10 @@
 
         </div>
 
+
+
         <div class="w-auto h-auto bg-nav_gradient ">
-            <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 relative py-10">
+            <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 relative py-10 px-6">
                 <div class="py-12">
                     <div class="font-tasa text-6xl font-semibold text-black_bold_text">
                         <p>Supercharge your business</p>
@@ -3387,7 +3546,7 @@
                     </div>
                     <div class="py-4">
                         <button
-                            class="bg-nav_button_blue font-inter font-semibold text-white text-sm md:text-base py-3 px-4 rounded">
+                            class="bg-nav_button_blue font-inter font-semibold text-white text-sm md:text-base lg:py-3 lg:px-4 px-8 py-5 rounded">
                             Sign Up Now &#8594;
                         </button>
                     </div>
@@ -3397,7 +3556,7 @@
 
         <!-- Finally I reached Footer -->
         <div class="w-auto h-auto bg-white ">
-            <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 relative py-12">
+            <div class="flex flex-col w-full max-w-[1270px] mx-auto lg:px-10 px-6 relative py-12">
                 <div class="py-4 flex justify-between">
                     <div class="w-[30%]">
                         <a href="index.html" class="cursor-pointer ">
@@ -3441,7 +3600,7 @@
 
                     </div>
 
-                    <div class="flex gap-12">
+                    <div class="lg:flex gap-12">
                         <div class="flex flex-col">
                             <div class="font-lato text-sm text-grey_text_300 font-semibold"><p>ACCEPT PAYMENTS</p>
                                 <div class="text-sm font-lato text-nav_blue font-semibold py-2 flex flex-col">
@@ -3464,11 +3623,7 @@
                                     <a href="">Payment Aggregator</a>
                                     <a href="">Payment Aggregator</a>
                                     <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
+
 
                                 </div>
                             </div>
@@ -3488,9 +3643,7 @@
                                     <a href="">Payment Aggregator</a>
                                     <a href="">Payment Aggregator</a>
                                     <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
+                               
                                     <a href="">Payment Aggregator</a>
                                     <a href="">Payment Aggregator</a>
                                     <a href="">Payment Aggregator</a>
@@ -3520,19 +3673,7 @@
                                     <a href="">Payment Aggregator</a>
                                     <a href="">Payment Aggregator</a>
                                     <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
-                                    <a href="">Payment Aggregator</a>
+
 
                                 </div>
                             </div>
@@ -3541,6 +3682,15 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="sticky bottom-0 w-full flex justify-center items-center bg-white py-4 lg:hidden sm:block z-20 gap-2">
+            <button class="bg-nav_button_blue font-inter font-semibold text-white py-3 px-20 rounded">
+                Get Started Now &#8594;
+            </button>
+            <button class="bg-mobile_dropdown_button font-inter font-semibold text-white py-3 px-3 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#192839"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            </button>
         </div>
 
     </body>
