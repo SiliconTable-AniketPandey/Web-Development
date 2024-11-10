@@ -184,5 +184,5 @@ rectangleObject1.draw = "Draw method changed"
 console.log(rectangleObject1)
 
 rectangleObject1.draw = 44;
-
+ 
 console.log(rectangleObject1)
