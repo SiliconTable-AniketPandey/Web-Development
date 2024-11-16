@@ -157,6 +157,146 @@
 
 //factory function
 
+// function createRectangle() {
+//     let rectangle = {
+//         length: 1,
+//         breadth: 2,
+
+//         draw: function() {
+//             console.log("draw method called")
+//         }
+//     };
+//     return rectangle;
+// }
+
+// console.log(createRectangle());
+
+// let rectangleObject1 = createRectangle();
+
+// console.log(rectangleObject1);
+
+// rectangleObject1.length = 4;
+
+// console.log(rectangleObject1);
+
+// rectangleObject1.draw = "Draw method changed"
+
+// console.log(rectangleObject1)
+
+// rectangleObject1.draw = 44;
+ 
+// console.log(rectangleObject1)
+
+
+// let a = 10;
+// let b = a;
+
+// a++ 
+// console.log(a)
+// console.log(b)
+
+
+
+//constructor with parameters or passing arguments
+// function Circle(rad ,cir){
+//     this.radius = rad;
+//     this.circumference = cir;
+//     this.draw =  function(){
+//         console.log('Drawing a Circle')
+//     }
+// }
+
+// let circleObject = new Circle(14, 41);
+
+// console.log(circleObject, circleObject.draw);
+
+// circleObject.draw();
+
+// circleObject.area = 213;
+
+// console.log(circleObject);
+
+
+// delete circleObject.radius
+
+// console.log(circleObject);
+
+// console.log(circleObject.constructor);
+
+// console.log(Circle.constructor);
+
+
+
+// // Creating object of circle1
+// let Circle1 = new Function("rad","cir",
+//     `    this.radius = rad;
+//     this.circumference = cir;
+//     this.draw =  function(){
+//         console.log('Drawing a Circle')
+//     }`
+
+// );
+
+
+// let Cle = new Circle1(100,256);
+
+// console.log(Cle)
+
+// let number = 10
+
+// function numberIncrease(number){
+//     number++;
+// }
+
+// numberIncrease(number);
+
+// console.log(number);
+
+
+// let triangle = {
+//     height : 4,
+//     base : 7,
+//     hypotenous : 8,
+//     equilateral : false
+// };
+
+// //for-in loop
+
+// for(let key in triangle){
+//     //keys are reflected through key variable
+//     //values are refelected through triangle[key]
+//     console.log(key,triangle[key])
+// }
+
+
+// for (let key of Object.entries(triangle)){
+//     console.log(key);
+// }
+
+
+// if("color" in triangle){
+//     console.log("Present")
+// }
+
+// else{
+//     console.log('Absent')
+// }
+
+let triangle = {
+    height : 4,
+    base : 7,
+    hypotenous : 8,
+    equilateral : false
+};
+
+let emptyObject = {}
+
+for(let key in triangle){
+    emptyObject[key] = triangle[key];
+}
+
+console.log(emptyObject)
+
 function createRectangle() {
     let rectangle = {
         length: 1,
@@ -169,20 +309,8 @@ function createRectangle() {
     return rectangle;
 }
 
-console.log(createRectangle());
 
-let rectangleObject1 = createRectangle();
 
-console.log(rectangleObject1);
+let targetObject = Object.assign({},triangle,createRectangle());
 
-rectangleObject1.length = 4;
-
-console.log(rectangleObject1);
-
-rectangleObject1.draw = "Draw method changed"
-
-console.log(rectangleObject1)
-
-rectangleObject1.draw = 44;
- 
-console.log(rectangleObject1)
+console.log(targetObject);
