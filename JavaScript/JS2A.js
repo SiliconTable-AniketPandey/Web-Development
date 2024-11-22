@@ -153,3 +153,92 @@ myArray = [1,2,4,5,66,77,'Apples','Mangoes']
 // console.log(numbers)
 
 
+// Defining a function 
+
+// function runningFunction(){
+//     console.log('This function is running')
+// }
+
+// runningFunction();
+
+
+// // Function assignment
+
+// let idle = function walking(){
+//     console.log('Walking')
+// }
+
+// idle()
+
+
+// let idle2 = function(){
+//     console.log('Anonymus function assignment')
+// }
+
+// idle2()
+
+// function add(a,b){
+//     let total = 0
+//     for(let value of arguments){
+//         total = total + value
+//     }
+
+//     return total
+// }
+
+// console.log(add(100,200,300,12,63,6,3,85,96,7,48,2,9,3,7,5,7,8,4,85,9,6,))
+
+
+
+// function sum(num,...args,num3){
+//     console.log(args)
+// }
+
+// sum(100,200,300,12,63,6,3,85,96,7,48,2,9,3,7,5,7,8,4,85,9,6)
+
+
+//default parameters
+
+// function interestCalculator(p=0,r=0,y=0){
+//     return (p*r*y)/100
+// }
+
+// console.log(interestCalculator(100,10))
+
+
+// getter -> used to  access properties
+// setter -> used to change or update properties
+
+let person = {
+    firstName: 'Mukesh',
+    lastName: 'Dalle',
+
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+    },
+
+    set fullName(value) {
+        if (typeof value !== String) {
+            throw new Error('Not a string');
+        }
+        let parts = value.split(" ");
+        if (parts.length !== 2) {
+            throw new Error('Enter a valid full name');
+        }
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+
+try {
+    person.fullName = 1;
+} 
+
+catch (e) {
+    alert(e); // Output: Not a string
+}
+
+
+
+
+
