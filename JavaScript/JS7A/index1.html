@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <!-- Wrapper -->
+    <div class="bg-black h-[100vh] w-screen justify-center items-center flex relative" >
+        
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        
+        <div class=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[450px] border-2 border-[#ffffff30] flex flex-col items-center justify-evenly bg-[#ffffff1a] backdrop-blur-[15px] rounded-[15px] text-white p-[10px_25px] ">
+            <div class="p-8 gap-6 justify-center items-center flex flex-col">
+                <div>
+                    <img class="w-36 h-36 bg-blue-500 rounded-full " src="./assets/images/1713395796893.jpeg" alt="myprofile picture">
+                </div>
+                <div class="text-white font-medium text-3xl font-tasa">
+                    Aniket Pandey
+                </div>
+                <div class="text-grey_text_300 font-medium  font-lato  ">
+                    Software Engineer, Data Scientist
+                </div>
+                <div class="text-gray-300 font-medium  font-lato space-x-1">
+                    <button onclick="openModal()" class="bg-transparent border-grey_text_300 border-2 p-2 rounded-md hover:bg-grey_text_300 transition-all hover:text-black"><i class="fa-solid fa-share"></i> Share My profile</button>
+                    <button class="bg-transparent cursor-pointer border-grey_text_300 border-2 p-2 px-7 rounded-md hover:bg-grey_text_300 transition-all hover:text-black" > Follow me</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- hidden modal -->
+        <div id="modal" class="transform scale-0 absolute w-[500px] backdrop-blur-[10px] border-2 rounded-2xl border-[#ffffff59] bg-[#00000088] z-10 ease-in-out duration-100">
+            <div class="p-5">
+                <div class="flex justify-between pb-2 ">
+                    <div  class="text-3xl font-tasa border-b-white text-white">
+                        Share My Profile
+                    </div>
+                    <div class="text-3xl text-white">
+                        <i onclick="closeModal()" class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <hr class="py-3">
+                <div class="text-lg font-tasa text-white">
+                    Share it via
+                </div>
+                <div class="flex justify-between pt-6 text-3xl">
+                    <div class="w-14 h-14 rounded-full border-2 border-blue-700 flex justify-center items-center  hover:bg-blue-700 group"><i class=" group-hover:text-black text-blue-700  fa-brands fa-facebook-f"></i></div>
+                    <div class="w-14 h-14 rounded-full border-2 border-green-700 flex justify-center items-center hover:bg-green-700 group"><i class="group-hover:text-black text-green-700 fa-brands fa-whatsapp"></i></div>
+                    <div class="w-14 h-14 rounded-full border-2 border-pink-700 flex justify-center items-center hover:bg-pink-700 group"><i class="group-hover:text-black text-pink-700 fa-brands fa-instagram"></i></div>
+                    <div class="w-14 h-14 rounded-full border-2 border-blue-600 flex justify-center items-center hover:bg-blue-600 group"><i class="group-hover:text-black text-blue-600 fa-brands fa-linkedin"></i></div>
+                    <div class="w-14 h-14 rounded-full border-2 border-blue-600 flex justify-center items-center hover:bg-blue-600 group"><i class="group-hover:text-black text-blue-600 fa-brands fa-telegram"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="overlay" onclick="closeModal()" class="bg-[#5f5f5f83] fixed top-0 bottom-0 opacity-0 left-0 right-0 pointer-events-none ease-in-out duration-500"></div>
+
+    <script src="https://kit.fontawesome.com/5e70d29672.js" crossorigin="anonymous"></script>
+    <script src="./index1.js"></script>
+</body>
+</html>

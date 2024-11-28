@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.circle1{
+  position: fixed;
+  top: 1%;
+  left: 24%;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #d84869;
+  background: linear-gradient(-25deg, #d84869, #f46641);
+  animation: circle1Animate 15s infinite;
+}
+
+@keyframes circle1Animate {
+  50% {
+    left: 26%;
+    top: 6%;
+    scale: 1.11;
+  }
+}
+
+.circle2 {
+  position: absolute;
+  bottom: 1%;
+  right: 24%;
+  width: 14em;
+  height: 14em;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #5648d8;
+  background: linear-gradient(-25deg, #5648d8, #8641f4);
+  animation: circle2Animate 8s infinite;
+}
+
+@keyframes circle2Animate {
+  50% {
+    bottom: 3%;
+    right: 26%;
+  }
+}
+
+.active {
+  scale: 1;
+}
+
+.overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+
+@media (max-width: 850px) {
+    .card-wrapper {
+      max-width: 250px;
+      width: 300px;
+    }
+    .bottom-group {
+      flex-direction: column;
+    }
+    .modal {
+      width: 70vw;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-wrapper {
+      position: static;
+      top: 0;
+      left: 0;
+      translate: 0 0;
+      margin: 0 12px;
+      padding: 0 10px;
+    }
+    .card-wrapper div img {
+      width: 120px;
+      height: 120px;
+    }
+    .user-name h2 {
+      font-size: 1.3rem;
+    }
+    .modal {
+      width: 80vw;
+    }
+  }
